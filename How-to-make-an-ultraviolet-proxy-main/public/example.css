@@ -19,24 +19,25 @@ html, body {
 }
 
 #urlInput {
-    padding: 4px; 
+    padding: 4px;
     width: 225px;
     height: 33px;
     border: 2px solid rgb(102, 102, 102);
     outline: none;
     color: rgb(255, 255, 255);
     background-color: #000000;
-    font-size: 2vh; 
+    font-size: 2vh;
     border-radius: 10px;
 
     /* Fixed positioning for centering */
-    position: fixed; 
-    top: 50%; /* Center vertically */
-    left: 50%; /* Start from the center horizontally */
-    transform: translate(-50%, -980%); /* Move back by half its width and height */
+    position: fixed;
+    top: 10px; /* Position at the top of the screen */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust position so it's perfectly centered */
     z-index: 1;
     transition: opacity 0.3s ease; /* Smooth transition for disappearing */
 }
+
 
 /* Hide urlInput when iframeWindow is displayed */
 .iframeWindow.show + #urlInput {
