@@ -27,11 +27,13 @@ html, body {
     background-color: #000000;
     font-size: 2vh; 
     border-radius: 10px;
-    margin: 0 auto; /* Center horizontally */
-    position: fixed; /* Fixes the position */
-    top: 5px; /* Adjust this value to move it down from the top */
+
+    /* Fixed positioning for centering */
+    position: fixed; 
+    top: 50%; /* Center vertically */
     left: 50%; /* Start from the center horizontally */
-    transform: translateX(-50%); /* Move back by half its width */
+    transform: translate(-50%, -50%); /* Move back by half its width and height */
+    z-index: 2;
 }
 
 #urlInput:hover {
@@ -48,7 +50,7 @@ html, body {
 
 #searchButton {
     padding: 4px;
-    margin: 0; /* Remove bottom margin */
+    margin: 23234px; /* Remove bottom margin */
     margin-left: 10px; /* Space to the left of the button */
     width: 8vw; 
     height: 4.75vh; 
@@ -75,7 +77,32 @@ html, body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: large;
     font-weight: bold;
-    margin-top: 850px;
-    margin-left: 550px;
     font-size: xx-large;
+    z-index: 1;
+    position: relative;
+    transform: translateX(-50%);
+    padding: 10px;
+    bottom: 0;
+    position: absolute;
+    left: 50%
 }
+
+#mypicture {
+    margin-top: -1223px;
+    z-index: 2;
+}
+
+
+#centeredText2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large; /* Remove the duplicated font-size declaration */
+    font-weight: bold;
+    z-index: 1;
+    position: absolute; /* Keep absolute positioning */
+    top: 45%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Move back by half its width and height */
+    padding: 10px;
+    text-align: center; /* Center text within the element */
+}
+
