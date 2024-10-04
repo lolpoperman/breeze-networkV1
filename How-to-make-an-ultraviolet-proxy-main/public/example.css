@@ -70,3 +70,12 @@ html, body {
     position: absolute;
     left: 93685859px;
 }
+
+#centeredText {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 850px;
+    margin-left: 550px;
+    font-size: xx-large;
+}
