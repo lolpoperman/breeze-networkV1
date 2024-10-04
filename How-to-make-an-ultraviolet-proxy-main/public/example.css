@@ -1,14 +1,13 @@
 .iframeWindow {
     position: absolute;
     width: 100vw;
-    height: 85vh;
+    height: 89vh;
     border: 0;
     padding: 0;
     margin: 0;
     left: 0;
     bottom: 0;
     z-index: 0;
-    background-color: bisque;
 }
 
 /* Disable scrolling on the entire page */
@@ -34,14 +33,13 @@ html, body {
     position: fixed; 
     top: 50%; /* Center vertically */
     left: 50%; /* Start from the center horizontally */
-    transform: translate(-50%, -50%); /* Move back by half its width and height */
+    transform: translate(-50%, -945%); /* Move back by half its width and height */
     z-index: 1;
     transition: opacity 0.3s ease; /* Smooth transition for disappearing */
 }
 
-/* Hide urlInput when iframeWindow is focused or displayed */
-.iframeWindow:focus-within ~ #urlInput,
-.iframeWindow {
+/* Hide urlInput when iframeWindow is displayed */
+.iframeWindow.show + #urlInput {
     opacity: 0; /* Make it invisible */
     pointer-events: none; /* Prevent interaction when hidden */
 }
@@ -111,7 +109,7 @@ html, body {
     position: absolute; /* Keep absolute positioning */
     top: 45%; /* Center vertically */
     left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Move back by half its width and height */
+    transform: translate(-50%, -760%); /* Move back by half its width and height */
     padding: 10px;
     text-align: center; /* Center text within the element */
 }
