@@ -1,7 +1,7 @@
 .iframeWindow {
     position: absolute;
     width: 100vw;
-    height: 94vh;
+    height: 85vh;
     border: 0;
     padding: 0;
     margin: 0;
@@ -33,7 +33,7 @@ html, body {
     position: fixed; 
     top: 50%; /* Center vertically */
     left: 50%; /* Start from the center horizontally */
-    transform: translate(-50%, -1010%); /* Move back by half its width and height */
+    transform: translate(-50%, -980%); /* Move back by half its width and height */
     z-index: 1;
     transition: opacity 0.3s ease; /* Smooth transition for disappearing */
 }
@@ -109,7 +109,7 @@ html, body {
     position: absolute; /* Keep absolute positioning */
     top: 45%; /* Center vertically */
     left: 50%; /* Center horizontally */
-    transform: translate(-165%, -745%); /* Move back by half its width and height */
+    transform: translate(-50%, -50%); /* Move back by half its width and height */
     padding: 10px;
     text-align: center; /* Center text within the element */
 }
